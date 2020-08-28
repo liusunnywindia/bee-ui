@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/bee-ui',
     name: 'Home',
     component: Home
   },
@@ -20,25 +20,25 @@ const routes = [
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // },
   {
-    path:'/BeeButton',
-    name:'BeeButton',
-    component:BeeButton
+    path: '/BeeButton',
+    name: 'BeeButton',
+    component: BeeButton
   },
   {
-    path:'/BeeRadio',
-    name:'BeeRadio',
-    component:()=>import('../views/Radio.vue')
+    path: '/BeeRadio',
+    name: 'BeeRadio',
+    component: () => import('../views/Radio.vue')
   },
   {
-    path:'/BeeMessage',
-    name:'BeeMessage',
-    component:()=>import('../views/Message.vue')
+    path: '/BeeMessage',
+    name: 'BeeMessage',
+    component: () => import('../views/Message.vue')
   }
 ]
 
 const router = new VueRouter({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: process.env.NODE_ENV === 'production' ? '/bee-ui/' : '/',
   routes
 })
 
