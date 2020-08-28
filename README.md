@@ -1,4 +1,4 @@
-# demo
+# BeeUi
 
 ## Project setup
 ```
