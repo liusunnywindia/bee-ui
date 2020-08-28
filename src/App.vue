@@ -6,11 +6,11 @@
         tag="div"
       >Home</router-link>
       <router-link
-        to="/BeeButton"
+        :to="{name:'BeeButton'}"
         tag="div"
       >按钮</router-link>
-      <router-link to="/BeeRadio" tag="div">单选框</router-link>
-      <router-link to="/BeeMessage" tag="div">消息提示框</router-link>
+      <router-link  :to="{name:'BeeRadio'}" tag="div">单选框</router-link>
+      <router-link :to="{name:'BeeMessage'}" tag="div">消息提示框</router-link>
     </div>
     <div class="main" id="main">
       <router-view />
