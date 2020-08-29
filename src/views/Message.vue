@@ -1,18 +1,18 @@
 <template>
   <div class="button-row">
     <BeeButton
-      @click.native="open"
+      @click="open"
       text="点击我哈"
     />
     <BeeButton
       text="点击危险按钮"
       type="danger"
-      @click.native="openError"
+      @click="openError"
     />
         <BeeButton
         text="警告按钮"
         type="warning"
-        @click.native="openwarn"
+        @click="openwarn"
       />
   </div>
 </template>
