@@ -3,6 +3,7 @@
     class="btn"
     :class="[type,{ 'is-circle': circle},{'is-disabled':disabled},{'is-loading':loading}]"
     :disabled="disabled"
+    v-on="$listeners"
   ><img
       src="@/assets/bee.svg"
       class="icon"
