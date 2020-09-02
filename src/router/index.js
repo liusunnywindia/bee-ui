@@ -33,6 +33,11 @@ const routes = [
     path: '/BeeMessage',
     name: 'BeeMessage',
     component: () => import('../views/Message.vue')
+  },
+  {
+    path: '/BeeInput',
+    name: 'BeeInput',
+    component: () => import('../views/Input.vue')
   }
 ]
 
