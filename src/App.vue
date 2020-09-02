@@ -11,6 +11,7 @@
       >按钮</router-link>
       <router-link  :to="{name:'BeeRadio'}" tag="div">单选框</router-link>
       <router-link :to="{name:'BeeMessage'}" tag="div">消息提示框</router-link>
+      <router-link :to="{name:'BeeInput'}" tag="div">输入框</router-link>
     </div>
     <div class="main" id="main">
       <router-view />
