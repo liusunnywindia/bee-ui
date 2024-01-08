@@ -38,7 +38,12 @@ const routes = [
     path: '/BeeInput',
     name: 'BeeInput',
     component: () => import('../views/Input.vue')
-  }
+  },
+  {
+    path: '/test',
+    name: 'test',
+    component: () => import('../views/test.vue')
+  },
 ]
 
 const router = new VueRouter({
